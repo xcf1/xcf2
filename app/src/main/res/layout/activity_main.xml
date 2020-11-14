@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="75dp"
+        android:textColor="#952251"
+        android:text="欢迎来到水果店"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="400dp"
+        android:scaleType="fitXY"
+        android:layout_height="200dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/fruit" />
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:textColor="#854623"
+        android:layout_below="@+id/i1"
+        android:layout_alignRight="@+id/t1"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入水果名"
+        android:textColorHint="#854623"
+        android:layout_alignTop="@+id/b1"
+        android:layout_marginLeft="200dp"
+        android:textColor="#125864"/>
+    <ListView
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b1"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
